@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gray_border"
+        android:elevation="2dp"
+        android:foreground="?android:selectableItemBackground"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewSectionName"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:textSize="16sp"
+            tools:text="Technology" />
+
+        <TextView
+            android:id="@+id/textViewWebPublicationDate"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSectionName"
+            android:textColor="#555"
+            android:textSize="16sp"
+            tools:text="Monday 14 August 2017 08:00 IST" />
+
+        <TextView
+            android:id="@+id/textViewWebTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewWebPublicationDate"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:text="Galaxy Note 8: Samsung's follow-up to exploding Note 7 to be unveiled on 23 August" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
